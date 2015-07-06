@@ -9,7 +9,7 @@ class Triangle
   end	
 	
   def kind
-    if (a <= 0 || b <= 0 || c <= 0) or (a + b <= c) then
+    if (c <= 0 || b <= 0 || a <= 0) or (a + b <= c) then
 	  raise TriangleError.new
 	elsif a == b && a == c then
 	  :equilateral
